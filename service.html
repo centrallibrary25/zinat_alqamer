@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TRAVELER - Free Travel Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    
+    <style>
+           .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .marquee {
+            background-color: #490886; /* لون الشريط */
+            color: white;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            padding: 10px 0;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            padding-left: 100%; /* يبدأ النص من خارج الشاشة */
+            animation: marquee-animation 10s linear infinite;
+        }
+
+        @keyframes marquee-animation {
+            0% {
+                transform: translate(0);
+            }
+            100% {
+                transform: translate(-100%);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>07744455150</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="https://www.facebook.com/share/17V9xks7gk/?mibextid=wwXIfr">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                       
+                        <a class="text-primary px-3" href="https://www.instagram.com/zinat_alqamar?igsh=YmszdXRkdGhqdjY4">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-primary pl-3" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <style>
+                    .navbar-brand {
+                        display: flex;
+                        align-items: center; /* لمحاذاة النص واللوغو عموديًا */
+                    }
+                
+                    .brand-text {
+                        font-family: 'Monotype Koufi', sans-serif; /* يمكنك اختيار خط آخر إذا رغبت */
+                        color: rgb(102, 0, 128); /* اللون البنفسجي */
+                        font-size: 40px; /* حجم الخط */
+                        margin-left: 10px; /* مسافة بين اللوغو والنص */
+                    }
+                </style>
+                
+                <a href="" class="navbar-brand">
+                    <img src="img/logo2.jpg" alt="لوغو" style="height: 90px; margin-right: 10px;" />
+                    <span class="brand-text">زينة القمر</span>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link "style="font-size: 17px;">الرئيسية</a>
+                        <a href="about.html" class="nav-item nav-link" style="font-size: 17px;">من نحن</a>
+                        <a href="service.html" class="nav-item nav-link" style="font-size: 17px;">خدماتنا</a>
+                        <a href="contact.html" class="nav-item nav-link" style="font-size: 17px;">تواصلوا معنا</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid page-header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase">خدماتنا</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Home</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Services</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <div class="marquee">
+        <div class="marquee-text">مع شركة زينة القمر🌍 لا تنسه العنوان - بغداد،- شارع فلسطين - تقاطع الصخرة  ✈️ استمتع بعطلتك! 🌍  جعل كل رحلة تجربة مميزة ومليئة بالذكريات الجميلة جعل كل رحلة تجربة مميزة ومليئة بالذكريات الجميلةالآن 🌅</div>
+    </div>
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Services</h6>
+                <h1>Tours & Travel Services</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-cog  mx-auto mb-4"></i>
+                        <h5 class="mb-2">تنوع الخدمات</h5>
+                        <p class="m-0">تقدم الشركة مجموعة شاملة من الخدمات التي تلبي احتياجات العملاء المختلفة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-plane-alt mx-auto mb-4"></i>
+                        <h5 class="mb-2">سهولة الوصول</h5>
+                        <p class="m-0">التركيز على تقديم تجارب إيجابية للعملاء يعزز ولاءهم وثقتهم في الشركة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
+                        <h5 class="mb-2">حجز الفنادق</h5>
+                        <p class="m-0">يشمل مجموعة واسعة من الفنادق بأسعار تنافسية تناسب جميع الميزانيات</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-route mx-auto mb-4"></i>
+                        <h5 class="mb-2">دليل السفر</h5>
+                        <p class="m-0">يساهم في خلق ذكريات لا تُنسى من خلال تقديم اقتراحات فريدة ومبتكرة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-ticket-alt mx-auto mb-4"></i>
+                        <h5 class="mb-2">حجز التذاكر</h5>
+                        <p class="m-0">تقدم الشركة نظام حجز تذاكر سهل ومباشر يلبي احتياجات العملاء</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-globe mx-auto mb-4"></i>
+                        <h5 class="mb-2">جولات سياحية</h5>
+                        <p class="m-0">تنظيم جولات سياحية مخصصة لاستكشاف المعالم المحلية وتجربة الثقافة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-bus mx-auto mb-4"></i>
+                        <h5 class="mb-2">خدمات النقل</h5>
+                        <p class="m-0">توفير خيارات نقل مريحة من وإلى المطار أو بين الوجهات المختلفة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
+                        <h5 class="mb-2">استشارات سفر</h5>
+                        <p class="m-0">تقديم نصائح متخصصة لمساعدتك في تخطيط رحلتك بشكل مثالي</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-car mx-auto mb-4"></i>
+                        <h5 class="mb-2">إيجارات السيارات</h5>
+                        <p class="m-0">خيارات لاستئجار سيارات تناسب احتياجاتك أثناء الزيارة لمساعدتك في التواصل أثناء السفر</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 0px;">افضل الخطوط</h6>
+                <h1>اصدقاء لشركات الطيران</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="text-center pb-4">
+                    <img class="img-fluid mx-auto" src="img/100.jpg" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">
+                        </p>
+                        <h5 class="text-truncate">Iraqi airways</h5>
+                        <span>الخطوط الجوية العراقية</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img class="img-fluid mx-auto" src="img/turk.png" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">
+                        </p>
+                        <h5 class="text-truncate">Turkish AirLines</h5>
+                        <span>خطوط الجوية التركية</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img class="img-fluid mx-auto" src="img/airarabia.png" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">
+                        </p>
+                        <h5 class="text-truncate">airarabia.com</h5>
+                        <span>العربية للطيران</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img class="img-fluid mx-auto" src="img/101.jpg" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">
+                        </p>
+                        <h5 class="text-truncate">QATAR AIRWAYS</h5>
+                        <span>خطوط الجوية القطرية</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img class="img-fluid mx-auto" src="img/ROYAL.png" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">
+                        </p>
+                        <h5 class="text-truncate">ROYALJORDANIAN</h5>
+                        <span>خطوط الملكية الاردنية</span>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <img class="img-fluid mx-auto" src="img/Emirates.png" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">
+                        </p>
+                        <h5 class="text-truncate">Fly Emirates</h5>
+                        <span>خطوط الجوية الاماراتية</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img class="img-fluid mx-auto" src="img/kascopage.jpg" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">
+                        </p>
+                        <h5 class="text-truncate">Kuwait Aviation Services</h5>
+                        <span>خطوط الجوية الكويتية</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+    <div class="marquee" style="background-color: #cc0953; /* لون الشريط */
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+        <div class="marquee-text">مع شركة زينة القمر🌍 لا تنسه العنوان - بغداد،- شارع فلسطين - تقاطع الصخرة  ✈️ استمتع بعطلتك! 🌍 احجز رحلتك الان 🌍 ومتواجدين على مدار الاسبوع 🌍 زينة القمر للسفر والسياحة *سااارع بالحجز   🌅</div>
+        
+    </div>
+    
+</body>
+
+</html>
